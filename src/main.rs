@@ -32,6 +32,7 @@ fn main() {
         matches.value_of("author").expect("author无效")
       ))
       .arg("--since=1.weeks")
+      .arg("--no-merges")
       .arg("--stat")
       .arg("--color")
       .output()
